@@ -1,9 +1,56 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Les Chaussons Roses Lézatois</title>
-<meta name="description" content="Association de danse, yoga et pilates à Lézat-sur-Lèze.">
-<link rel="stylesheet" href="style.css"></head><body><header class="topbar">
-<a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Les Chaussons Roses Lézatois"><strong>Les Chaussons Roses Lézatois</strong></a>
-<button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-<nav><a href="activites.html">Activités</a><a href="professeurs.html">Professeurs</a><a href="planning.html">Planning</a><a href="agenda.html">Agenda</a><a href="adhesion.html">Adhésion</a><a class="pill" href="contact.html">Contact</a></nav>
-</header><main><section id="contact" class="section pink-bg contact"><div class="eyebrow">Contact</div><h2>Une question ? Écrivez-nous</h2><p>✉️ <a href="mailto:leschaussonsroseslezatois@gmail.com">leschaussonsroseslezatois@gmail.com</a></p><p>☎️ <a href="tel:+33619336525">06 19 33 65 25</a></p><p>☎️ <a href="tel:+33612462115">06 12 46 21 15</a></p></section></main><footer><div><img src="assets/logo.png" alt=""><strong>Les Chaussons Roses Lézatois</strong></div><p>© 2026 Les Chaussons Roses Lézatois — Association de danse, yoga et pilates.</p></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Les Chaussons Roses Lézatois</title>
+  <meta name="description" content="Contactez Les Chaussons Roses Lézatois.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page{padding:70px 20px 90px}.contact-intro{text-align:center;max-width:700px;margin:0 auto 45px}.contact-intro h1{margin-bottom:12px}.contact-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:stretch}.contact-info,.contact-form{background:rgba(255,255,255,.55);border-radius:24px;padding:35px;box-shadow:0 10px 35px rgba(70,35,55,.06)}.contact-info h2,.contact-form h2{margin-top:0;margin-bottom:25px}.contact-item{margin-bottom:25px}.contact-item strong{display:block;margin-bottom:6px}.contact-item a{color:inherit;text-decoration:none}.contact-item a:hover{text-decoration:underline}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-group{margin-bottom:18px}.form-group label{display:block;font-weight:600;margin-bottom:7px}.form-group input,.form-group textarea{width:100%;box-sizing:border-box;border:1px solid rgba(50,35,45,.18);border-radius:12px;padding:13px 15px;font:inherit;background:#fff;color:inherit;outline:none}.form-group input:focus,.form-group textarea:focus{border-color:#d22f68;box-shadow:0 0 0 3px rgba(210,47,104,.10)}.form-group textarea{min-height:150px;resize:vertical}.contact-form .btn{border:0;cursor:pointer;font:inherit}@media(max-width:800px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr;gap:0}.contact-info,.contact-form{padding:25px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Les Chaussons Roses Lézatois"><strong>Les Chaussons Roses Lézatois</strong></a>
+  <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">≡</button>
+  <nav><a href="activites.html">Activités</a><a href="professeurs.html">Professeurs</a><a href="planning.html">Planning</a><a href="agenda.html">Agenda</a><a href="adhesion.html">Adhésion</a><a href="contact.html" class="btn primary">Contact</a></nav>
+</header>
+<main class="contact-page">
+  <div class="contact-intro"><div class="eyebrow">Nous contacter</div><h1>Une question ? Écrivez-nous</h1><p>Une question sur les cours, les inscriptions ou l'association ? Nous sommes à votre écoute.</p></div>
+  <div class="contact-grid">
+    <section class="contact-info">
+      <h2>Nos coordonnées</h2>
+      <div class="contact-item"><strong>📍 Adresse</strong><span>Foyer rural, 100 Av. de Toulouse, 09210 Lézat-sur-Lèze</span></div>
+      <div class="contact-item"><strong>✉️ E-mail</strong><a href="mailto:leschaussonsroseslezatois@gmail.com">leschaussonsroseslezatois@gmail.com</a></div>
+      <div class="contact-item"><strong>📞 Téléphone</strong><span><strong>Sylvie MUNOZ</strong><br><a href="tel:+33612462115">06 12 46 21 15</a><br><br><strong>Marjorie GAUBERT</strong><br><a href="tel:+33619336525">06 19 33 65 25</a></span></div>
+      <p>Retrouvez-nous également lors de nos cours et événements tout au long de l'année.</p>
+    </section>
+    <section class="contact-form">
+      <h2>Envoyez-nous un message</h2>
+      <form id="contactForm">
+        <div class="form-row"><div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" required></div><div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" required></div></div>
+        <div class="form-group"><label for="email">Votre adresse e-mail</label><input type="email" id="email" required></div>
+        <div class="form-group"><label for="objet">Objet</label><input type="text" id="objet" required></div>
+        <div class="form-group"><label for="message">Votre message</label><textarea id="message" required></textarea></div>
+        <button type="submit" class="btn primary">Envoyer le message</button>
+      </form>
+    </section>
+  </div>
+</main>
+<footer><div><img src="assets/logo.png" alt=""><strong>Les Chaussons Roses Lézatois</strong></div><p>© 2026 Les Chaussons Roses Lézatois</p></footer>
+<script src="script.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const prenom=document.getElementById('prenom').value;
+  const nom=document.getElementById('nom').value;
+  const email=document.getElementById('email').value;
+  const objet=document.getElementById('objet').value;
+  const message=document.getElementById('message').value;
+  const corps=`Bonjour,\n\n${message}\n\n-------------------------\nMessage envoyé depuis le site des Chaussons Roses Lézatois\n\nNom : ${prenom} ${nom}\nE-mail : ${email}`;
+  window.location.href='mailto:leschaussonsroseslezatois@gmail.com?subject='+encodeURIComponent(objet)+'&body='+encodeURIComponent(corps);
+});
+</script>
+</body>
+</html>
