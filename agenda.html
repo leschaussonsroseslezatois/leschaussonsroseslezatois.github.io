@@ -2,11 +2,58 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Agenda — Les Chaussons Roses Lézatois</title>
 <meta name="description" content="Association de danse, yoga et pilates à Lézat-sur-Lèze.">
-<link rel="stylesheet" href="style.css"></head><body><header class="topbar">
+<link rel="stylesheet" href="style.css"><style>
+/* Dates de l’agenda : plus lisibles sans modifier le style global du site */
+#agenda .news .badge.agenda-date{
+  min-width:112px;
+  padding:14px 10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:1px;
+  text-align:center;
+  line-height:1;
+}
+#agenda .agenda-date .date-day{
+  font-size:2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+#agenda .agenda-date .date-month{
+  margin-top:3px;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+#agenda .agenda-date .date-year{
+  margin-top:2px;
+  font-size:.72rem;
+  font-weight:700;
+  opacity:.8;
+}
+#agenda .agenda-date .date-time{
+  margin-top:9px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:rgba(255,255,255,.82);
+  font-size:.78rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+@media (max-width:640px){
+  #agenda .news .badge.agenda-date{min-width:92px;padding:12px 8px}
+  #agenda .agenda-date .date-day{font-size:1.65rem}
+}
+</style></head><body><header class="topbar">
 <a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Les Chaussons Roses Lézatois"><strong>Les Chaussons Roses Lézatois</strong></a>
 <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 <nav><a href="activites.html">Activités</a><a href="professeurs.html">Professeurs</a><a href="planning.html">Planning</a><a href="agenda.html">Agenda</a><a href="adhesion.html">Adhésion</a><a class="pill" href="contact.html">Contact</a></nav>
-</header><main><section id="agenda" class="section pink-bg"><div class="eyebrow">Actualités</div><h2>À ne pas manquer</h2><div class="news"><article><div class="badge">✦<small>RENTRÉE</small></div><div><h3>Semaine de cours d'essai</h3><p>Chaque rentrée, une semaine de cours d'essai est proposée à toutes les disciplines : l'occasion parfaite pour découvrir l'association avant de s'inscrire.</p><small>Dates de la prochaine semaine d'essai : nous contacter pour les connaître.</small></div></article><article><div class="badge">✦<small>FORUM</small></div><div><h3>Forum des associations</h3><p>Les Chaussons Roses Lézatois participent chaque année au Forum des associations pour présenter leurs cours et répondre à vos questions.</p><small>Prochaine édition : date à venir — suivez nos actualités.</small></div></article></div></section></main><footer class="site-footer">
+</header><main><section id="agenda" class="section pink-bg"><div class="eyebrow">Actualités</div><h2>À ne pas manquer</h2><div class="news">
+<article><div class="badge agenda-date"><span class="date-day">5</span><span class="date-month">OCT</span><span class="date-year">2026</span><span class="date-time">20h00</span></div><div><h3>Assemblée Générale des Chaussons Roses Lézatois</h3><p>Le lundi 5 octobre 2026 à 20h00 à la salle du Foyer Rual. Venez nombreux pour découvrir le bilan de l'année, les projets à venir et échanger ensemble autour de la vie de notre école de danse. Votre présence compte !</p></div></article>
+<article><div class="badge agenda-date"><span class="date-day">7–12</span><span class="date-month">SEPT</span><span class="date-year">2026</span></div><div><h3>Semaine de cours d'essai</h3><p>Du 7 au 12 septembre 2026, une semaine de cours d'essai est proposée à toutes les disciplines : l'occasion parfaite pour découvrir l'association avant de s'inscrire.</p></div></article>
+<article><div class="badge agenda-date"><span class="date-day">5</span><span class="date-month">SEPT</span><span class="date-year">2026</span><span class="date-time">9h–16h</span></div><div><h3>Forum des associations</h3><p>Les Chaussons Roses Lézatois participent au Forum des associations le 5 septembre 2026, de 9h à 16h, pour présenter leurs cours et répondre à vos questions.</p></div></article>
+</div></div></section></main><footer class="site-footer">
 <div class="footer-top">
 <div class="footer-follow">
 <b>SUIVEZ-NOUS !</b>
